@@ -1,6 +1,7 @@
 import numpy
 import random
 import sys
+import os
 
 
 class Game(object):
@@ -134,7 +135,7 @@ if __name__ == "__main__":
     game.printMatrix()
     while True:
         game.Operation()
-        os.system("cls")
+        os.system("clear")
         if game.isWin():
             print('You WIN!!')
             break
